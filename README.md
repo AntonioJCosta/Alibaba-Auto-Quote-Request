@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt=Alibaba-Auto-Quote-Request media="screen.PNG" width="800px" style="border-radius:16px;"/>
+  <img alt=Alibaba-Auto-Quote-Request media="screen.png" width="800px" style="border-radius:16px;"/>
 </h1>
 
 <h3 align="center" >
