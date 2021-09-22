@@ -176,7 +176,9 @@ def main():
         collected_data = pd.DataFrame(
             suppliers_list, columns=["Company name", "Main products", "Website", "contact supplier link"]
         )
-        collected_data.to_excel(destination_folder + "\\" + str(product_name) + "suppliers" + ".xlsx", index=False)
+        collected_data.to_excel(
+            destination_folder + "\\" + str(product_name).title() + " Suppliers" + ".xlsx", index=False
+        )
 
     while True:
         try:
