@@ -1,5 +1,6 @@
 <h1 align="center">
-  <img alt=Alibaba-Auto-Quote-Request media="screen.png" width="800px" style="border-radius:16px;"/>
+  
+  ![screen](https://user-images.githubusercontent.com/87380701/135878545-4cc08722-c733-4f3e-9057-874d66244c13.png)
 </h1>
 
 <h3 align="center" >
