@@ -30,8 +30,11 @@
 
 # First step
 
-1º - install requirements for the project<br/>
+1º - Install requirements for the project<br/>
 2º - pip install -r requirements.txt<br/>
+3º - Login into your alibaba Account <br/>
+4º - Run the program<br/>
+5º - If you want to stop the program just move the mouse to the (0,0) position in the screen.<br/>
 
 ## Author
 
