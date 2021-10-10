@@ -58,4 +58,4 @@ This project is [MIT](https://github.com/ArthurPedroit/pv-agf-frontend/blob/mast
 
 ---
 
-Made by :blue_heart: by [Antonio Costa](https://github.com/ArthurPedroti)
+Made by :blue_heart: by [Antonio Costa](https://github.com/Antonio-Costa00)
