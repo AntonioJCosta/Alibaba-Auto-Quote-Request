@@ -54,7 +54,7 @@ Give a ⭐️ if this project helped you!
 ## License
 
 Copyright © 2021 [Antonio Costa](https://github.com/Antonio-Costa00).<br />
-This project is [MIT](https://github.com/ArthurPedroit/pv-agf-frontend/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/Antonio-Costa00/Alibaba-Auto-Quote-Request/blob/master/LICENSE) licensed.
 
 ---
 
