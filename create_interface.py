@@ -65,6 +65,7 @@ def create_interface() -> tuple:
             continue
         if event in (sg.WIN_CLOSED, keys.exit):
             window.close()
+            exit()
         if (
             values in [keys.auto_cont, keys.data_in_excel]
             and values[keys.prd_name] == ""
