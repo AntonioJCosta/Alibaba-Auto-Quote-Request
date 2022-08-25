@@ -64,29 +64,33 @@ def create_interface() -> tuple:
             clear_input(values, window)
             continue
         if event in (sg.WIN_CLOSED, keys.exit):
+            sg.popup("Bye!", "Thanks for using this program!")
             window.close()
             exit()
-        if (
-            values in [keys.auto_cont, keys.data_in_excel]
-            and values[keys.prd_name] == ""
-            and event == keys.submit
-        ):
-            sg.popup("You must fill the Product Name field")
-            continue
-        if (
-            values in [keys.auto_cont, keys.data_in_excel]
-            and values[keys.destn_dir] == ""
-            and event == keys.submit
-        ):
-            sg.popup("You must fill the Directory of destiny field")
-            continue
-        if (
-            values[keys.auto_cont]
-            and values[keys.seller_msg] == ""
-            and event == keys.submit
-        ):
-            sg.popup("You must fill the Message to seller field")
-            continue
-        sg.popup("Your search for new sellers has begun!")
+        if event == keys.submit:
+            try:
+                if 0 <= int(values[keys.sellers_qty]) >= 40:
+                    sg.popup(
+                        "Error",
+                        "You must enter a number greater than 0 and less than 40",
+                    )
+                    continue
+            except ValueError:
+                sg.popup(
+                    "Error",
+                    "You must enter a number character on the sellers quantity spinbox",
+                )
+                continue
+            if values[keys.prd_name] == "":
+                sg.popup("Error", "You must enter a product name")
+                continue
+            if values[keys.destn_dir] == "":
+                sg.popup("Error", "You must enter a directory")
+                continue
+            if values[keys.auto_cont] and values[keys.seller_msg] == "":
+                sg.popup("Error", "You must enter a message to seller")
+                continue
+
+        sg.popup("Sucess!", "Your search for new sellers has been submitted")
         clear_input(values, window)
         return event, values

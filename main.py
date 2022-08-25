@@ -23,6 +23,7 @@ if __name__ == "__main__":
         end_time = time()
         if not itf_values[keys.auto_cont]:
             sg.popup_auto_close(
+                "Sucess",
                 f"Your search for new sellers was finished with sucess! \n\n Execution time:{round(end_time - init_time, 2)}",
                 auto_close_duration=6,
             )
@@ -32,6 +33,7 @@ if __name__ == "__main__":
                 auto_contact(cont_link, sellers_msg)
                 end_time = time()
             sg.popup_auto_close(
+                "Sucess",
                 f"Sellers contacted with sucess! \n\n Execution time: {round(end_time - init_time, 2)}",
                 auto_close_duration=6,
             )

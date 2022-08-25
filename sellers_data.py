@@ -12,11 +12,11 @@ def sellers_data(prd_name: str, suppliers_qty: int) -> list:
     data_list = []
 
     # Get the data from each supplier and prevent to crash if doesn't find enough sellers
-    for _, prod_containers in zip(range(suppliers_qty), prod_containers):
+    for _, container in zip(range(suppliers_qty), prod_containers):
 
-        company_name = prod_containers.find("a", attrs={"target": "_blank"})
-        main_prods = prod_containers.find("div", attrs={"class": "value ellipsis ph"})
-        dir_cont_link = prod_containers.find("a", attrs={"class": "button csp"})
+        company_name = container.find("a", attrs={"target": "_blank"})
+        main_prods = container.find("div", attrs={"class": "value ellipsis ph"})
+        dir_cont_link = container.find("a", attrs={"class": "button csp"})
         data_list.append(
             {
                 "company_name": company_name.text if company_name != None else "",
