@@ -64,7 +64,7 @@ def create_interface() -> tuple:
             clear_input(values, window)
             continue
         if event in (sg.WIN_CLOSED, keys.exit):
-            sg.popup("Bye!", "Thanks for using this program!")
+            sg.popup("Bye!", "Thanks for using my program!")
             window.close()
             exit()
         if event == keys.submit:

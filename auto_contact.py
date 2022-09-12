@@ -14,6 +14,6 @@ def auto_contact(seller_cont_link: str, seller_msg: str) -> None:
     send_inq_img = pg.locateCenterOnScreen(
         "./media/send_inquiry.png", confidence=0.7, grayscale=True
     )
-    if send_inq_img != None:
+    if send_inq_img is not None:
         pg.click(send_inq_img)
     return None
